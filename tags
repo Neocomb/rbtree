@@ -1,0 +1,65 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC=gcc$/;"	m
+LOG	main.c	14;"	d	file:
+LOG	tree.c	12;"	d	file:
+LOGE	main.c	15;"	d	file:
+LOGE	tree.c	13;"	d	file:
+NEW	main.c	16;"	d	file:
+NEW	tree.c	14;"	d	file:
+Target	makefile	/^Target=$(basename $(firstword $(src) ) )$/;"	m
+_TREE_H	tree.h	9;"	d
+__anon2::nodeNum	tree.h	/^    int nodeNum;$/;"	m	struct:__anon2	access:public
+__anon2::root	tree.h	/^    node* root;$/;"	m	struct:__anon2	access:public
+black	tree.h	/^    black$/;"	e	enum:__anon1
+c	tree.h	/^    color c;$/;"	m	struct:n	access:public
+color	tree.c	/^int   color(node* n){$/;"	f	signature:(node* n)
+color	tree.h	/^int   color(node* n);$/;"	p	signature:(node* n)
+color	tree.h	/^}color;$/;"	t	typeref:enum:__anon1
+create	tree.c	/^tree* create(){$/;"	f
+create	tree.h	/^tree* create();$/;"	p	signature:()
+delete	tree.c	/^int delete( tree* t , int value );$/;"	p	file:	signature:( tree* t , int value )
+grandpa	tree.c	/^node* grandpa(node* n){$/;"	f	signature:(node* n)
+grandpa	tree.h	/^node* grandpa(node* n);$/;"	p	signature:(node* n)
+insert	tree.c	/^int insert( tree* t , int value ){$/;"	f	signature:( tree* t , int value )
+insert	tree.h	/^int insert( tree* t , int value );$/;"	p	signature:( tree* t , int value )
+insertFix	tree.c	/^int   insertFix(tree* t , node* n){$/;"	f	signature:(tree* t , node* n)
+insertFix	tree.h	/^int   insertFix(tree* t , node* n);$/;"	p	signature:(tree* t , node* n)
+lRotate	tree.c	/^node* lRotate(tree* t , node* n){$/;"	f	signature:(tree* t , node* n)
+lRotate	tree.h	/^node* lRotate(tree* t , node* n);$/;"	p	signature:(tree* t , node* n)
+lc	tree.h	/^    struct n* lc;$/;"	m	struct:n	typeref:struct:n::n	access:public
+locate	tree.c	/^node* locate(node* n){}$/;"	f	signature:(node* n)
+locate	tree.h	/^node* locate(node* n);$/;"	p	signature:(node* n)
+main	main.c	/^int main(int argc , char** argv){$/;"	f	signature:(int argc , char** argv)
+n	tree.h	/^struct n{$/;"	s
+n::c	tree.h	/^    color c;$/;"	m	struct:n	access:public
+n::lc	tree.h	/^    struct n* lc;$/;"	m	struct:n	typeref:struct:n::n	access:public
+n::parent	tree.h	/^    struct n* parent;$/;"	m	struct:n	typeref:struct:n::n	access:public
+n::rc	tree.h	/^    struct n* rc;$/;"	m	struct:n	typeref:struct:n::n	access:public
+n::value	tree.h	/^    int value;$/;"	m	struct:n	access:public
+node	tree.h	/^typedef struct n node;$/;"	t	typeref:struct:n
+nodeNum	tree.h	/^    int nodeNum;$/;"	m	struct:__anon2	access:public
+parent	tree.c	/^node* parent (node* n){$/;"	f	signature:(node* n)
+parent	tree.h	/^    struct n* parent;$/;"	m	struct:n	typeref:struct:n::n	access:public
+parent	tree.h	/^node* parent (node* n);$/;"	p	signature:(node* n)
+precursor	tree.c	/^node* precursor(node* n);$/;"	p	file:	signature:(node* n)
+precursor	tree.h	/^node* precursor(node* n);$/;"	p	signature:(node* n)
+rRotate	tree.c	/^node* rRotate(tree* t , node* n){$/;"	f	signature:(tree* t , node* n)
+rRotate	tree.h	/^node* rRotate(tree* t , node* n);$/;"	p	signature:(tree* t , node* n)
+rc	tree.h	/^    struct n* rc;$/;"	m	struct:n	typeref:struct:n::n	access:public
+red	tree.h	/^    red,$/;"	e	enum:__anon1
+replace_node	tree.c	/^void replace_node(tree* t, node oldn, node newn) {$/;"	f	signature:(tree* t, node oldn, node newn)
+replace_node	tree.h	/^void replace_node(rbtree t, node oldn, node newn);$/;"	p	signature:(rbtree t, node oldn, node newn)
+root	tree.h	/^    node* root;$/;"	m	struct:__anon2	access:public
+sibling	tree.c	/^node* sibling(node* n){$/;"	f	signature:(node* n)
+sibling	tree.h	/^node* sibling(node* n);$/;"	p	signature:(node* n)
+src	makefile	/^src=$(wildcard *.c)$/;"	m
+succeed	tree.c	/^node* succeed(node* n){}$/;"	f	signature:(node* n)
+succeed	tree.h	/^node* succeed(node* n);$/;"	p	signature:(node* n)
+tree	tree.h	/^}tree;$/;"	t	typeref:struct:__anon2
+uncle	tree.c	/^node* uncle(node* n){$/;"	f	signature:(node* n)
+value	tree.h	/^    int value;$/;"	m	struct:n	access:public
